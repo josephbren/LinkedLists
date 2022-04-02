@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintRecursiveCreatedLL()
+RecursiveCreateLinkedList* CreateLinkedList()
 {
     auto recursiveCreatedLL = new RecursiveCreateLinkedList();
 
@@ -13,13 +13,39 @@ void PrintRecursiveCreatedLL()
     recursiveCreatedLL->Append(4);
     recursiveCreatedLL->Append(5);
     recursiveCreatedLL->Append(6);
-    std::cout << "This is the recursively created linked list : " << recursiveCreatedLL->GetPrintedList();
-    cout << endl << endl;
+
+    return recursiveCreatedLL;
+}
+
+
+void PrintRecursiveCreatedLL()
+{
+    auto recursiveCreatedLL = CreateLinkedList();
+    if (recursiveCreatedLL)
+    {
+        std::cout << "This is the recursively created linked list: " << recursiveCreatedLL->GetPrintedList();
+        cout << endl << endl;
+    }
+}
+
+
+void PrintReversedLL()
+{
+    auto recursiveCreatedLL = CreateLinkedList();
+    if (recursiveCreatedLL)
+    {
+        LLNode* newHead = ReverseLinkedList(recursiveCreatedLL->GetHead());
+        recursiveCreatedLL->SetHead(newHead);
+
+        std::cout << "The reversed linked list is: " << recursiveCreatedLL->GetPrintedList();
+        cout << endl << endl;
+    }
 }
 
 
 int main()
 {
     PrintRecursiveCreatedLL();
+    PrintReversedLL();
 }
 

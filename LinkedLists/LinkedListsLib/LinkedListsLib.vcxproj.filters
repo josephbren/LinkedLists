@@ -21,12 +21,21 @@
     <ClInclude Include="LLRecusiveCreate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ReverseLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LLNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LLRecusiveCreate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseLL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

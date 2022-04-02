@@ -8,7 +8,9 @@
 #define PCH_H
 
 // add headers that you want to pre-compile here
+#include "LLNode.h"
 #include "LLRecusiveCreate.h"
+#include "ReverseLL.h"
 
 using namespace std;
 

@@ -84,8 +84,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="LLNode.h" />
     <ClInclude Include="LLRecusiveCreate.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ReverseLL.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LLRecusiveCreate.cpp" />
@@ -93,6 +95,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ReverseLL.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

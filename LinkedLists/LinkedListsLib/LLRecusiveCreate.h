@@ -12,18 +12,8 @@ public:
 	void Append(int data);
 	string GetPrintedList();
 
-	class LLNode
-	{
-	public:
-		LLNode(int data)
-		{
-			_data = data;
-			_next = nullptr;
-		}
-
-		int _data;
-		LLNode* _next;
-	};
+	LLNode* GetHead();
+	void SetHead(LLNode* head);
 
 private:
 	void _Append(int data, LLNode* current);

@@ -35,6 +35,18 @@ string RecursiveCreateLinkedList::GetPrintedList()
 }
 
 
+LLNode* RecursiveCreateLinkedList::GetHead()
+{
+	return _head;
+}
+
+
+void RecursiveCreateLinkedList::SetHead(LLNode* head)
+{
+	_head = head;
+}
+
+
 void RecursiveCreateLinkedList::_Append(int data, LLNode* current)
 {
 	if (!current->_next)
